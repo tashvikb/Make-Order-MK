@@ -1,0 +1,35 @@
+# =====================
+# COMMON
+# =====================
+node_modules
+.env
+.env.*
+*.log
+logs
+
+# =====================
+# FRONTEND (Vite / React)
+# =====================
+frontend/node_modules
+frontend/dist
+frontend/dist-ssr
+frontend/.local
+
+# =====================
+# BACKEND (Express)
+# =====================
+backend/node_modules
+backend/uploads   # ❗ images git me nahi jayengi
+backend/.env
+
+# =====================
+# SYSTEM / EDITOR
+# =====================
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.swp
+*.suo
+*.njsproj
+*.sln
