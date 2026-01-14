@@ -18,7 +18,7 @@ const ViewCartBtn = () => {
         {cart.slice(-3).map((item) => (
           <img
             key={item._id}
-            src={`http://localhost:5000/uploads/${item.image}`}
+            src={`http://make-order-mk.onrender.com/uploads/${item.image}`}
             alt=""
           />
         ))}

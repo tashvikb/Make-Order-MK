@@ -16,7 +16,7 @@ const Product = (p) => {
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div className="p_image">
-          <img src={`http://localhost:5000/uploads/${p.image}`} />
+          <img src={`https://make-order-mk.onrender.com/uploads/${p.image}`} />
 
           {/* ADD / QTY BUTTON */}
           {qty === 0 ? (

@@ -21,7 +21,7 @@ const ListProducts = () => {
     formData.append("image", image);
 
     try {
-      const res = await fetch("http://localhost:5000/products", {
+      const res = await fetch("https://make-order-mk.onrender.com/products", {
         method: "POST",
         body: formData,
       });

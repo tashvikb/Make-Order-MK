@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import ViewCartBtn from "./components/ViewCartBtn";
 
 const Home = () => {
+
+  const API = "https://make-order-mk.onrender.com";
+  
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch(`${API}/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));

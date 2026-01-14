@@ -25,7 +25,7 @@ const Cart = () => {
                     }}
                 >
                     <img 
-                        src={`http://localhost:5000/uploads/${item.image}`}
+                        src={`http:///make-order-mk.onrender.com/uploads/${item.image}`}
                         alt={item.title} 
                         style={{ width: "80px", height: "80px", objectFit: "cover" }} 
                     />

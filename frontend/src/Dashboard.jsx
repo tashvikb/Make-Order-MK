@@ -9,7 +9,7 @@ const Dashboard = () => {
         if (!confirmDelete) return;
       
         try {
-          const res = await fetch(`http://localhost:5000/products/${id}`, {
+          const res = await fetch(`https://make-order-mk.onrender.com/products/${id}`, {
             method: "DELETE",
           });
       
@@ -29,7 +29,7 @@ const Dashboard = () => {
       
     
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://make-order-mk.onrender.com/products")
         .then((res) => res.json())
         .then((data) => setProducts(data))
         .catch((err) => console.log(err));
@@ -49,7 +49,7 @@ const Dashboard = () => {
                      <tr key={p._id}>
                         <td>{p.title}</td>
                         <td>{p.price}</td>
-                        <td><img src={`http://localhost:5000/uploads/${p.image}`} style={{width: '100px'}}/></td>
+                        <td><img src={`https://make-order-mk.onrender.com/uploads/${p.image}`} style={{width: '100px'}}/></td>
                         <td><button onClick={() => handleDelete(p._id)} >Delete</button></td>
                         <td><button>Edit</button></td>
                      </tr>
