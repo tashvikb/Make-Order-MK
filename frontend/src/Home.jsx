@@ -1,7 +1,7 @@
 import Product from "./Product";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import ViewCartBtn from "./Components/ViewCartBtn";
+import ViewCartBtn from "./components/ViewCartBtn";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
