@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import multer from "multer";
 import cors from "cors";
-import Product from "./models/Product.js";
+import Product from "./models/product.js";
 import dotenv from 'dotenv'
 dotenv.config()
 
