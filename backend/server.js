@@ -43,6 +43,11 @@ app.get("/products", async (req, res) => {
   res.json(products);
 });
 
+app.get("/products/:id", async (req, res) => {
+  const product = await Product.findById(req.params.id);
+  res.json(product);
+});
+
 app.delete("/products/:id", async (req, res) => {
   const { id } = req.params;
 
